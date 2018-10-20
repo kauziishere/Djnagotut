@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<title>
+	Kauziishere
+</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script src="{% static 'js/angular.min.js' %}"></script>
+<body>
+<div class="sidenav">
+	<a href=''>About</a>
+	<a href="{% url 'projects' %}">Projects</a>
+	<a href="{% url 'skills' %}">Skills</a>
+	<a href="{% url 'courses' %}">Courses</a>
+	<a href="{% url 'edu' %}">Education</a>
+</div>
+<div class="main">
+	<div class="header" align="center" style="padding-left:20px;">KAUZIISHERE</div>
+	<div class="quote" align="center" style="padding-left:20px;">A Research and Artificial Intelligence enthusiast</div>
+	<hr/>
+	<p class ="about" align="left">
+		Hi! My name is Kaustubh Vijay Joshi, I go by the name kauzi. If you are here and reading this, I suppose you might have also read the header, I use the handle name kauziishere. I love to read Philosophy, One of my favourite Philosopher is Friedrich Nietzsche,</p>
+	<p class="about" align="center" style="color:grey;font-style:italic;">"All humans are geniuses as long as they believe they are one!"</p>
+	<p class="about" align="left">
+	 	He didn't quote that, I did. The quote won't mean anything until, I am someone someday and this website is a milestone on that journey! Nietzsche was a brilliant philosopher, I feel he understood humans at their best and their worst. I did read lot of other great Philosophers like Albert Camus, Aristotle and Ludwig Wittgenstein.
+	</p>
+	 <p class="about" align="left">
+	 	This love of philosophy lead me to the field of Artificial Intelligence, While I was doing my undergrad. I came across the field and the Idea of being able to transfer our understanding or making machines or system understand the Universe/Humans was beautiful. It was philosophy but for modern world.
+	</p>
+	<p class="about" align="left">
+		At the end of my second year in undergrad, I started studying AI, Machine Learning, Computer Vision and Natural Language Processing. I have since worked on a number of project in these domains and have enjoyed them a lot. Currently I am actively seeking for an internship in the same domains. So, If you know someone hook me up. Thank you!!!
+	</p>
+		<p id = "count" alight = "center" style="padding-left:200px;">
+			You are {{posts.view_count}}th viewer of this page.
+		</p>
+</div>
+<div class="projects">
+	This
+</div>
+</body>
+</html>

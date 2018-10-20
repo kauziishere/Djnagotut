@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<title>
+	Kauziishere
+</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script src="{% static 'js/angular.min.js' %}"></script>
+<body>
+	<div class="sidenav">
+		<a href=''>About</a>
+		<a href="{% url 'projects' %}">Projects</a>
+		<a href="{% url 'skills' %}">Skills</a>
+		<a href="{% url 'courses' %}">Courses</a>
+		<a href="{% url 'edu' %}">Education</a>
+	</div>
+<div id="main"  style="padding-top:20px;" align="center">
+	<p> These are the few important and core courses, I took over my undergraduate year that have helped me develop decent Computer Science knowledge.</p>
+	<table id = courses>
+		<tr>
+			<th>Core Courses</th>
+			<th>MOOCs</th>
+		</tr>
+		<tr>
+			<td>Data Structure</td>
+			<td>Introduction to Machine Learning</td>
+		</tr>
+		<tr>
+			<td>Computer Algorithms</td>
+			<td>Neural Networks and Deep Learning</td>
+		</tr>
+		<tr>
+			<td>Operating Systems</td>
+			<td>Improving Deep Neural Networks</td>
+		</tr>
+		<tr>
+			<td>Database Management Systems</td>
+			<td>Convolutional Neural Networks</td>
+		<tr>
+		<tr>
+			<td>Linear Algebra</td>
+			<td>Introduction to R</td>
+		<tr>
+		<tr>
+			<td>Theory of Computation</td>
+			<td>Python3: Begineer to Advanced</td>
+		<tr>
+		<tr>
+			<td>Discrete Mathematics</td>
+			<td>Building a search Engine in PHP and MySQL</td>
+		<tr>
+	</table>
+</div>
+<p id = "count" alight = "center" style="padding-left:200px;">
+	You are {{posts.view_count}}th viewer of this page.
+</p>
+</body>
+</html>

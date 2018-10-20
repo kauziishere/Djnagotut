@@ -1,0 +1,73 @@
+.sidenav{
+	height: 100%;
+	width: 160px;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	overflow-x:hidden;
+	background:#111;
+	padding-top:20px;
+}
+.sidenav a{
+	padding: 6px 8px 6px 16px;
+	text-decoration:none;
+	font-size:20px;
+	color: #818181;
+	display:block;
+}
+.sidenav a:hover{
+	color: #f1f1f1;
+}
+.main .header{
+	padding:0px 10px;
+	padding-left:30px;
+	padding-top:10px;
+	color:black;
+	font-size:24px;
+}
+.main .quote{
+	padding:20px 10px;
+	padding-top:10px;
+	padding-left:30px;
+	color:black;
+	font-size:20px;
+}
+.hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.main .about{
+	padding-top:0px;
+	padding-left:160px;
+	font-size:18px;
+}
+#main #courses{
+	padding-left:160px;
+	border-collapse:collapse;
+	width:100%;
+	border:1px solid #ddd;
+}
+#main p{
+	font-size:18px;
+	padding-bottom:20px;
+	padding-left:160px;
+}
+#courses td, #courses th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-left:160px;
+    padding-top: 20px;
+    padding-bottom:20px;
+    text-align:center;
+}
+#main #courses th{
+	background-color:black;
+	color:white;
+}
+#main #courses tr:nth-child(even){background-color: #f2f2f2;}
+#main #courses tr:hover {background-color: #ddd;}
