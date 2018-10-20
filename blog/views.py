@@ -5,8 +5,11 @@ from django.utils import timezone
 def post_list(request):
 	posts = Post.objects.all()
 	return render(request, 'blog/post_list.html', {})
+
 def index_page(request):
 	posts = Post.objects.get(title='About me')
+	posts.view_count = posts.view_count + 1
+	posts.save()
 	return render(request, 'blog/index.html', {'posts': posts})
 
 def edu_page(request):
