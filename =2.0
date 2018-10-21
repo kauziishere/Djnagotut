@@ -1,0 +1,8 @@
+Collecting django
+  Using cached https://files.pythonhosted.org/packages/32/ab/22530cc1b2114e6067eece94a333d6c749fa1c56a009f0721e51c181ea53/Django-2.1.2-py3-none-any.whl
+Requirement already satisfied, skipping upgrade: pytz in /usr/local/lib/python3.5/dist-packages (from django) (2017.2)
+Installing collected packages: django
+  Found existing installation: Django 1.11.6
+    Uninstalling Django-1.11.6:
+      Successfully uninstalled Django-1.11.6
+Successfully installed django-2.1.2
